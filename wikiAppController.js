@@ -18,6 +18,7 @@ app.controller("wikiAppController", function ($scope, $http) {
 
         if (searchKey === "") {
             messageDisplay.innerHTML = "Please, tell me what are you looking for :)";
+            $("#search-container").effect('shake', { distance: 10});
         }
 
         else {

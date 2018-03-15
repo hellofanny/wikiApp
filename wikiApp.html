@@ -7,9 +7,11 @@
   <meta name="viewport" content="width = device-width, minimum-scale = 1">
 
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 
   <!-- Custom Css -->
-  <link rel="stylesheet" type="text/css" href="style.css"/>
+  <link rel="stylesheet" type="text/css" href="style.css" />
 
   <!-- Material icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -21,8 +23,8 @@
 
   <div ng-app="wikiApp" ng-controller="wikiAppController" class="container">
 
-    <div class="search-container">
-      <input type="text" ng-model='searchKey'>
+    <div class="search-container" id="search-container">
+      <input type="text" ng-model='searchKey' id="inputKe">
       <i class="material-icons" ng-click="search()">search</i>
     </div>
 
@@ -38,7 +40,6 @@
     </div>
 
   </div>
-
 
   <script src="wikiAppController.js"></script>
 </body>
