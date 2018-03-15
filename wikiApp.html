@@ -1,35 +1,44 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8">
-    <title>WikiApp</title>
-    <meta name="viewport" content="width = device-width, minimum-scale = 1">
+  <meta charset="utf-8">
+  <title>WikiApp</title>
+  <meta name="viewport" content="width = device-width, minimum-scale = 1">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 
-    <!-- Custom Css -->
-    <link rel="stylesheet" type="text/css" href="style.css" />
+  <!-- Custom Css -->
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+
+  <!-- Material icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 
 
 <body>
 
-<div ng-app="wikiApp" ng-controller="wikiAppController">
+  <div ng-app="wikiApp" ng-controller="wikiAppController" class="container">
 
-  <input type="text" ng-model='searchKey'>
-  <button ng-click="search()">ok</button>
-  
-  <ul>
-    <li ng-repeat="result in results">
-        <p>Title : {{result.title}}</p>
-        <p>{{result.description}}</p>
-    </li>
-  </ul>
+    <div class="search-container">
+      <input type="text" ng-model='searchKey'>
+      <i class="material-icons" ng-click="search()">search</i>
+    </div>
 
-</div>
+    <div style="margin: 3rem;">
+      <ul>
+        <li ng-repeat="result in results">
+          <p>{{result.title}}</p>
+          <span>{{result.description}}</span>
+        </li>
+      </ul>
+    </div>
+
+  </div>
 
 
-<script src="wikiAppController.js"></script>
+  <script src="wikiAppController.js"></script>
 </body>
-</html>
 
+</html>

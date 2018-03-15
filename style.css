@@ -1,5 +1,30 @@
 body {
     background-color: #ced0ec; 
-    color: 30336b;
+    color: #30336b;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input {
+    font-size: 18px;
+}
+
+p {
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-top: 4rem; 
+    align-self: center;
+}
+
+i {
+    padding-left:  0.3rem;
 }
