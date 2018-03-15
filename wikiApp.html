@@ -6,7 +6,7 @@
     <meta name="viewport" content="width = device-width, minimum-scale = 1">
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-    
+
     <!-- Custom Css -->
     <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
@@ -15,12 +15,19 @@
 <body>
 
 <div ng-app="wikiApp" ng-controller="wikiAppController">
+
+  <input type="text" ng-model='searchKey'>
+  <button ng-click="search()">ok</button>
+  
   <ul>
-    <li ng-repeat="x in products">{{x}}</li>
+    <li ng-repeat="result in results">
+        <p>Title : {{result.title}}</p>
+        <p>{{result.description}}</p>
+    </li>
   </ul>
+
 </div>
 
-<p>So far we have made an HTML list based on the items of an array.</p>
 
 <script src="wikiAppController.js"></script>
 </body>
