@@ -25,19 +25,27 @@
 
     <div class="search-container" id="search-container">
       <input type="text" ng-model='searchKey' id="inputKey" placeholder="I'm looking for...">
-      <button id="searchBtn" ng-click="search()"><i class="material-icons">search</i></button>
+      <button id="searchBtn" ng-click="search()">
+        <i class="material-icons">search</i>
+      </button>
     </div>
 
-    <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank" class="randomBtn" ng-click="searchRandom()">Give me a random article</a>        
+    <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank" class="randomBtn" ng-click="searchRandom()">Give me a random article</a>
 
-    <h3 id="message"></h3>
-    <h3 id="messageQuery"></h3>
+    <div style="margin: 0rem 3rem 0rem 3rem;">
+      <h3 id="message"></h3>
+      <h3 id="messageQuery"></h3>
+    </div>
 
-    <div style="margin: 0rem 3rem 3rem 3rem;">
+    <div style="margin: 0rem 3rem 0rem 3rem;">
       <ul>
         <li ng-repeat="result in results">
-          <p>{{result.title}}</p>
-          <div>{{result.description}}</div>
+          <div>
+            <a ng-href="{{ result.pageLink }}" target="_blank">
+              <p>{{result.title}}</p>
+            </a>
+            <div>{{result.description}}</div>
+          </div>
         </li>
       </ul>
     </div>

@@ -8,10 +8,6 @@ input {
     font-size: 18px;
 }
 
-p {
-    font-weight: bold;
-}
-
 .container {
     display: flex;
     justify-content: center;
@@ -72,20 +68,18 @@ li {
 }
 
 li p, div {
-    padding-left: 20px;
-    padding-right: 20px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
 }
 
 li p {
     padding-top: 15px;   
+    font-weight: bold;
 }
 
 li:hover {
     border-left: 8px solid #ff7979;
     margin-left: -5px;
-}
-li:hover p {
-    color: #ff7979;
 }
 
 a {
@@ -94,6 +88,7 @@ a {
 
 ul {
     list-style-type: none;
+    padding-left: 0px;
 }
 
 #messageQuery, #message {
