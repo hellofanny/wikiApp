@@ -29,16 +29,15 @@
     </div>
 
     <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank" class="randomBtn" ng-click="searchRandom()">Give me a random article</a>        
-    
 
-  
-    <span id="message"></span>
+    <h3 id="message"></h3>
+    <h3 id="messageQuery"></h3>
 
-    <div style="margin: 3rem;">
+    <div style="margin: 0rem 3rem 3rem 3rem;">
       <ul>
         <li ng-repeat="result in results">
           <p>{{result.title}}</p>
-          <span>{{result.description}}</span>
+          <div>{{result.description}}</div>
         </li>
       </ul>
     </div>

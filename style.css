@@ -1,6 +1,6 @@
 body {
-    background-color: #ced0ec; 
-    color: #30336b;
+    background-color: #30336b; 
+    color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -24,6 +24,7 @@ p {
     align-items: center;
     margin-top: 4rem; 
     align-self: center;
+    opacity: 0.8;
 }
 .search-container button#searchBtn {
     -webkit-border-top-right-radius: 8px;
@@ -46,6 +47,7 @@ p {
 
 #message {
    padding-top: 1rem;
+   color: white;
 }
 
 .randomBtn {
@@ -60,4 +62,39 @@ p {
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     border-radius: 8px;
+}
+
+li {
+    background-color: #f8f8f8da;
+    padding-bottom: 15px;
+    color: #30336b; 
+}
+
+li p, div {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+li p {
+    padding-top: 15px;   
+}
+
+li:hover {
+    border-left: 8px solid #ff7979;
+    margin-left: -5px;
+}
+li:hover p {
+    color: #ff7979;
+}
+
+a {
+    color: #ff7979;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#messageQuery, #message {
+    color: #e6e6e6;
 }
