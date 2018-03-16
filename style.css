@@ -43,6 +43,7 @@ p {
 .material-icons {
     cursor: pointer; 
     font-size: 20px;
+    color: #ff7979;
 }
 
 #message {
