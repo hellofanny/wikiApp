@@ -25,11 +25,39 @@ p {
     margin-top: 4rem; 
     align-self: center;
 }
+.search-container button#searchBtn {
+    -webkit-border-top-right-radius: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+    -moz-border-radius-topright: 8px;
+    -moz-border-radius-bottomright: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    margin-left: -53px;
+    border: none;
+}
 
-i {
-    padding-left:  0.3rem;
+.material-icons {
+    cursor: pointer; 
+    font-size: 20px;
 }
 
 #message {
    padding-top: 1rem;
+}
+
+.randomBtn {
+    cursor: pointer; 
+    padding-top: 5px;
+}
+
+#inputKey {
+    width: 300px;
+    height: 50px;
+    padding-left: 15px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
 }

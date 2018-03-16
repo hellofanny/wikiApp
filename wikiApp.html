@@ -24,10 +24,14 @@
   <div ng-app="wikiApp" ng-controller="wikiAppController" class="container">
 
     <div class="search-container" id="search-container">
-      <input type="text" ng-model='searchKey' id="inputKey">
-      <i class="material-icons" ng-click="search()" id="searchBtn">search</i>
+      <input type="text" ng-model='searchKey' id="inputKey" placeholder="Search...">
+      <button id="searchBtn" ng-click="search()"><i class="material-icons">search</i></button>
     </div>
 
+    <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank" class="randomBtn" ng-click="searchRandom()">Give me a random article</a>        
+    
+
+  
     <span id="message"></span>
 
     <div style="margin: 3rem;">
